@@ -1,0 +1,29 @@
+#colorlist{
+  display: flex;
+}
+#nav{
+  ul {
+    width:430px;
+    li {
+      float: left;
+      margin: 8px;
+      list-style-type: none;
+    }
+  }
+}
+#colormeun{
+  display:flex;
+  flex-direction: row;
+}
+#aboutcolor{
+  width: auto;
+  height: 524px;
+  right:100vh;
+}
+
+#name{
+  
+  top: 150px;
+  right:50vh;
+  font-size: 34px;
+}

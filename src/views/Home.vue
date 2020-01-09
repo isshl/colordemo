@@ -1,18 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <colorlist :colors="colors" />
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import colorlist from '../components/colorlist'
+import { mapGetters } from 'vuex'
 
 export default {
-  name: "home",
   components: {
-    HelloWorld
+    colorlist
+  },
+  computed: {
+    ...mapGetters(['colors'])
   }
-};
+}
 </script>
+
+<style lang="scss" scope>
+@import '../assets/scss/_home.scss';
+</style>
