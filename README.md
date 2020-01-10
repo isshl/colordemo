@@ -1,6 +1,6 @@
 ## 简介：
 
-这是一个简单的demo，使用了vue + vuex + vue-route + Element-UI + Canvas + tween + color-js，仅用来熟悉Vue-cli脚手架的使用。
+这是一个简单的[demo](https://isshl.me/colordemo/#/)，使用了vue + vuex + vue-route + Element-UI + Canvas + tween + color-js，仅用来熟悉Vue-cli脚手架的使用。
 
 ## 说明：
 cansva画图花费了一些时间了解相关api。
