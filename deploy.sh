@@ -10,14 +10,14 @@ npm run build
 cd dist
 
 # 部署到自定义域域名
- echo 'isshl.me' > CNAME
+# echo 'isshl.me' > CNAME
 
 git init
 git add -A
 git commit -m 'deploy'
 
 # 部署到 https://<USERNAME>.github.io
- git push -f git@github.com:isshl/isshl.github.io.git master
+git push -f git@github.com:isshl/colordemo.git master:gh-pages
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages

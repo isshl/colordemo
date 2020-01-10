@@ -6,7 +6,7 @@ import store from './store'
 
 Vue.component(Progress.name, Progress)
 Vue.component(Tooltip.name, Tooltip)
-// Vue.config.productionTip = false
+//Vue.config.productionTip = false
 
 new Vue({
   router,

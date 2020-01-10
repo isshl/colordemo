@@ -1,87 +1,85 @@
 <template>
-  <div id="colormenu">
-    <article id="aboutcolor" v-if="colorObject.CMYK">
+  <article id="aboutcolor" v-if="colorObject.CMYK">
+    <dl>
+      <img src="../img/bdr_w_50.png" />
+      <dt>{{ a[0] }}</dt>
+      <dt>
+        <el-progress
+          :stroke-width="2"
+          type="circle"
+          :color="CMYK[0]"
+          :width="50"
+          stroke-linecap="butt"
+          :percentage="colorObject.CMYK[0]"
+          show-text:true
+        ></el-progress>
+      </dt>
+
+      <img src="../img/bdr_w_50.png" />
+      <dt>{{ a[1] }}</dt>
+      <dt>
+        <el-progress
+          :stroke-width="2"
+          type="circle"
+          :color="CMYK[1]"
+          :width="50"
+          stroke-linecap="butt"
+          :percentage="colorObject.CMYK[1]"
+          show-text:true
+        ></el-progress>
+      </dt>
+
+      <img src="../img/bdr_w_50.png" />
+      <dt>{{ a[2] }}</dt>
+      <dt>
+        <el-progress
+          :stroke-width="2"
+          type="circle"
+          :color="CMYK[2]"
+          :width="50"
+          stroke-linecap="butt"
+          :percentage="colorObject.CMYK[2]"
+          show-text:true
+        ></el-progress>
+      </dt>
+
+      <img src="../img/bdr_w_50.png" />
+      <dt>{{ a[3] }}</dt>
+      <dt>
+        <el-progress
+          :stroke-width="2"
+          type="circle"
+          :color="CMYK[3]"
+          :width="50"
+          stroke-linecap="butt"
+          :percentage="colorObject.CMYK[3]"
+          show-text:true
+        ></el-progress>
+      </dt>
+    </dl>
+
+    <el-tooltip
+      class="item"
+      effect="dark"
+      :content="colorObject.HEX"
+      placement="right"
+      :open-delay="1"
+      offset="10"
+    >
       <dl>
         <img src="../img/bdr_w_50.png" />
-        <dt>{{ a[0] }}</dt>
-        <dt>
-          <el-progress
-            :stroke-width="2"
-            type="circle"
-            :color="CMYK[0]"
-            :width="50"
-            stroke-linecap="butt"
-            :percentage="colorObject.CMYK[0]"
-            show-text:true
-          ></el-progress>
-        </dt>
-
+        <dt>{{ b[0] }}</dt>
+        <dd>{{ colorObject.RGB[0] }}</dd>
         <img src="../img/bdr_w_50.png" />
-        <dt>{{ a[1] }}</dt>
-        <dt>
-          <el-progress
-            :stroke-width="2"
-            type="circle"
-            :color="CMYK[1]"
-            :width="50"
-            stroke-linecap="butt"
-            :percentage="colorObject.CMYK[1]"
-            show-text:true
-          ></el-progress>
-        </dt>
-
+        <dt>{{ b[1] }}</dt>
+        <dd>{{ colorObject.RGB[1] }}</dd>
         <img src="../img/bdr_w_50.png" />
-        <dt>{{ a[2] }}</dt>
-        <dt>
-          <el-progress
-            :stroke-width="2"
-            type="circle"
-            :color="CMYK[2]"
-            :width="50"
-            stroke-linecap="butt"
-            :percentage="colorObject.CMYK[2]"
-            show-text:true
-          ></el-progress>
-        </dt>
-
+        <dt>{{ b[2] }}</dt>
+        <dd>{{ colorObject.RGB[2] }}</dd>
         <img src="../img/bdr_w_50.png" />
-        <dt>{{ a[3] }}</dt>
-        <dt>
-          <el-progress
-            :stroke-width="2"
-            type="circle"
-            :color="CMYK[3]"
-            :width="50"
-            stroke-linecap="butt"
-            :percentage="colorObject.CMYK[3]"
-            show-text:true
-          ></el-progress>
-        </dt>
       </dl>
-
-      <el-tooltip
-        class="item"
-        effect="dark"
-        :content="colorObject.HEX"
-        placement="right"
-        :open-delay="1"
-        offset="10"
-      >
-        <dl>
-          <img src="../img/bdr_w_50.png" />
-          <dt>{{ b[0] }}</dt>
-          <dd>{{ colorObject.RGB[0] }}</dd>
-          <img src="../img/bdr_w_50.png" />
-          <dt>{{ b[1] }}</dt>
-          <dd>{{ colorObject.RGB[1] }}</dd>
-          <img src="../img/bdr_w_50.png" />
-          <dt>{{ b[2] }}</dt>
-          <dd>{{ colorObject.RGB[2] }}</dd>
-          <img src="../img/bdr_w_50.png" />
-        </dl>
-      </el-tooltip>
-    </article>
-  </div>
+    </el-tooltip>
+  </article>
 </template>
 
 <script>

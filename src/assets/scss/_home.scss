@@ -2,6 +2,7 @@
   display: flex;
 }
 #nav{
+  left:100vh;
   ul {
     width:430px;
     li {
@@ -11,18 +12,14 @@
     }
   }
 }
-#colormeun{
-  display:flex;
-  flex-direction: row;
-}
 #aboutcolor{
+  position: fixed;
   width: auto;
   height: 524px;
-  right:100vh;
+  left:100vh;
 }
 
 #name{
-  
   top: 150px;
   right:50vh;
   font-size: 34px;
