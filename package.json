@@ -41,12 +41,12 @@
   "main": ".eslintrc.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/isshl/color-demo.git"
+    "url": "git+https://github.com/isshl/colordemo.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/isshl/color-demo/issues"
+    "url": "https://github.com/isshl/colordemo/issues"
   },
-  "homepage": "https://github.com/isshl/color-demo#readme"
+  "homepage": "https://github.com/isshl/colordemo#readme"
 }
