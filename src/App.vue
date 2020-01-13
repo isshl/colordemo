@@ -7,7 +7,6 @@
 <style lang="scss">
 body {
   width: 960px;
-  height: 100%;
   margin: auto;
   font-family: Monaco, 'Avenir', Helvetica, Arial, sans-serif;
   color: #ffffff;

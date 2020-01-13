@@ -1,26 +1,18 @@
 #colorlist{
   display: flex;
+  flex-direction: row;
 }
 #nav{
-  left:100vh;
-  ul {
-    width:430px;
-    li {
-      float: left;
-      margin: 8px;
-      list-style-type: none;
-    }
-  }
+  width: 520px;
+}
+ul li{
+  float: left;
+  margin: 8px;
+  list-style-type: none;
 }
 #aboutcolor{
-  position: fixed;
-  width: auto;
-  height: 524px;
-  left:100vh;
-}
-
-#name{
-  top: 150px;
-  right:50vh;
-  font-size: 34px;
+  position: sticky;
+  top: 0px;
+  height: 610px;
+  margin-left: 10px;
 }
